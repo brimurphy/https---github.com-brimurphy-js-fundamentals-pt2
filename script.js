@@ -1,4 +1,5 @@
 "use strict";
+/*
 // Strict mode
 let hasDriversLicence = false;
 const passTest = true;
@@ -31,3 +32,23 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+*/
+
+//  Function Declarations vs Expressions
+
+// Function Declaration (can be called before declaration)
+
+const age1 = calcAge1(1983);
+
+function calcAge1(birthYear) {
+    return 2037 - birthYear;;
+}
+// Function Expression (can not be called before declaration)
+
+
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1983);
+
+console.log(age1, age2);
