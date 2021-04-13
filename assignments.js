@@ -44,3 +44,14 @@ const populationPercentPortugal3 = percentageOfWorld3(12);
 // console.log(populationPercentFinland3, populationPercentIreland3, populationPercentPortugal3);
 
 // 4: Functions Calling Other Functions
+
+function describePopulation(country, population) {
+    const percentageOfWorldPopulation = percentageOfWorld1(population);
+    return `${country} has ${population} million people, which is about ${percentageOfWorldPopulation}% of the world population.`;
+}
+const describeIreland = describePopulation("Ireland", 5);
+const describeFinland = describePopulation("Finland", 6);
+const describePortugal = describePopulation("Portugal", 12)
+console.log(describeFinland);
+console.log(describeIreland);
+console.log(describePortugal);
