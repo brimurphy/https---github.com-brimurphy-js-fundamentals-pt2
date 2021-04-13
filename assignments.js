@@ -52,6 +52,6 @@ function describePopulation(country, population) {
 const describeIreland = describePopulation("Ireland", 5);
 const describeFinland = describePopulation("Finland", 6);
 const describePortugal = describePopulation("Portugal", 12)
-console.log(describeFinland);
-console.log(describeIreland);
-console.log(describePortugal);
+// console.log(describeFinland);
+// console.log(describeIreland);
+// console.log(describePortugal);
