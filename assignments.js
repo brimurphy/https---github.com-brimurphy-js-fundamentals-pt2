@@ -29,6 +29,18 @@ const populationPercentIreland2 = percentageOfWorld2(5);
 const populationPercentFinland2 = percentageOfWorld2(6);
 const populationPercentPortugal2 = percentageOfWorld2(12)
 
-console.log(populationPercentFinland1, populationPercentFinland2);
-console.log(populationPercentIreland1, populationPercentIreland2);
-console.log(populationPercentPortugal1, populationPercentPortugal2);
+// console.log(populationPercentFinland1, populationPercentFinland2);
+// console.log(populationPercentIreland1, populationPercentIreland2);
+// console.log(populationPercentPortugal1, populationPercentPortugal2);
+
+// 3: Arrow Functions
+
+const percentageOfWorld3 = population => population / worldPopulation * 100;
+
+const populationPercentIreland3 = percentageOfWorld3(5);
+const populationPercentFinland3 = percentageOfWorld3(6);
+const populationPercentPortugal3 = percentageOfWorld3(12);
+
+// console.log(populationPercentFinland3, populationPercentIreland3, populationPercentPortugal3);
+
+// 4: Functions Calling Other Functions
