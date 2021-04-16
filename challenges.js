@@ -17,10 +17,10 @@ function checkWinner(avgDolphins, avgKoalas) {
     }
 }
 
-console.log(checkWinner(averageDolphins, averageKoalas));
+// console.log(checkWinner(averageDolphins, averageKoalas));
 
 // Test Data 2
 averageDolphins = calcAverage(85, 54, 41);
 averageKoalas = calcAverage(23, 34, 27);
 
-console.log(checkWinner(averageDolphins, averageKoalas));
+// console.log(checkWinner(averageDolphins, averageKoalas));

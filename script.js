@@ -111,3 +111,45 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1983, "Brian"));
 console.log(yearsUntilRetirement(1950, "Mike"));
 */
+
+// Introduction to Arrays
+
+// Instead of this
+const friend1 = "Michael";
+const friend2 = "Stephen";
+const friend3 = "Peter";
+
+// Literal syntax
+const friends = ["Michael", "Stephen", "Peter"];
+console.log(friends);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+// friends = ["Alan", "Mary"]; Whole Arrays can't be changed
+// Variables and Arrays can be in an Array
+const firstName = "Brian";
+const brian = [firstName, "Murphy", 2037 - 1983, "technician", friends];
+
+console.log(brian);
+console.log(brian.length);
+
+// Exercise
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const years = [1983, 1991, 1995, 1998, 2001, 2019];
+console.log(calcAge(years)); // Will return NaN
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
