@@ -111,7 +111,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1983, "Brian"));
 console.log(yearsUntilRetirement(1950, "Mike"));
 */
-
+/*
 // Introduction to Arrays
 
 // Instead of this
@@ -153,3 +153,40 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+
+// Basic Array Operations (Methods)
+
+// Add Elements
+const friends = ["Michael", "Stephen", "Peter"];
+const newLength = friends.push(`Jay`);
+console.log(friends);
+console.log(newLength);
+
+friends.unshift(`John`);
+console.log(friends);
+
+// Remove Elements
+
+friends.pop(); // Removes last element
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // Removes first element
+console.log(friends);
+
+console.log(friends.indexOf(`Stephen`));
+console.log(friends.indexOf(`Bob`)); // Element doesn't exist, returns -1.
+
+friends.push(23);
+console.log(friends.includes(`Stephen`)); // True
+console.log(friends.includes(`Bob`)); // False
+// Includes method uses strict comparison
+console.log(friends.includes(`23`)); // False
+console.log(friends.includes(23)); // True
+
+// Example
+if (friends.includes(`Stephen`)) {
+    console.log(`You have a friend called Stephen`);
+}

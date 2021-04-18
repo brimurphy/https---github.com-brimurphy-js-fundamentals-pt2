@@ -59,11 +59,11 @@ const describePortugal = describePopulation("Portugal", 12)
 // 5: Introduction to Arrays
 
 const populations = [5, 6, 12, 1398];
-console.log(populations.length === 4);
+// console.log(populations.length === 4);
 
 const percentages = [percentageOfWorld1(populations[0]),
 percentageOfWorld1(populations[1]),
 percentageOfWorld1(populations[2]),
 percentageOfWorld1(populations[populations.length - 1])];
 
-console.log(percentages);
+// console.log(percentages);
