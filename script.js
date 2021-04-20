@@ -154,7 +154,7 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 */
-
+/*
 // Basic Array Operations (Methods)
 
 // Add Elements
@@ -190,3 +190,42 @@ console.log(friends.includes(23)); // True
 if (friends.includes(`Stephen`)) {
     console.log(`You have a friend called Stephen`);
 }
+*/
+
+// Introduction to Objects
+
+const brian = {
+    firstName: `Brian`,
+    lastName: `Murphy`,
+    age: 2037 - 1983,
+    job: `Technician`,
+    friends: [`Michael`, `Peter`, `Stephen`]
+};
+
+// Dot vs. Bracket Notation
+
+console.log(brian.lastName);
+console.log(brian[`lastName`]);
+
+const nameKey = `Name`;
+console.log(brian[`first` + nameKey]);
+console.log(brian[`last` + nameKey]);
+
+// dot notation returns an error in the console
+// console.log(brian.`last` + nameKey);
+
+// Example of using brackets over dot notation
+const interestedIn = prompt(`What do you want to know about Brian? Choose between firstName, lastName, age, job, and friends.`);
+
+if (brian[interestedIn]) {
+    console.log(brian[interestedIn]);
+} else {
+    console.log(`Wrong request! Choose between firstName, lastName, age, job, and friends.`);
+}
+
+brian.location = `Ireland`;
+brian[`twitter`] = `@briman`;
+console.log(brian);
+
+// Challenge
+console.log(`${brian.firstName} has ${brian.friends.length} friends, and his best friend is ${brian.friends[0]}`);

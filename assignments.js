@@ -67,3 +67,42 @@ percentageOfWorld1(populations[2]),
 percentageOfWorld1(populations[populations.length - 1])];
 
 // console.log(percentages);
+
+// 5: Basic Array Operations(Methods)
+
+const neighbours = [`Netherlands`, `Germany`, `Luxembourg`, `France`];
+
+neighbours.push(`Utopia`);
+// console.log(neighbours);
+neighbours.pop();
+// console.log(neighbours);
+
+// if (neighbours.includes(`Germany`)) {
+//     console.log(`Probably is a central European country 😁`);
+// } else {
+//     console.log(`Probably not a central European country 😁`);
+// }
+
+const newName = neighbours.indexOf(`Luxembourg`)
+// console.log(newName);
+neighbours[2] = `Grand Duchy of Luxembourg`;
+// console.log(neighbours);
+
+// 6: Introduction to Objects
+
+const myCountry = {
+    country: `Ireland`,
+    capital: `Dublin`,
+    language: `English`,
+    population: 5,
+    neighbours: [`Wales`, `Northern Ireland`, `England`, `Scotland`]
+};
+
+// 7: Dot vs. Bracket Notation
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital city called ${myCountry.capital}`);
+
+myCountry.population = 7;
+console.log(myCountry.population);
+myCountry[`population`] = 5;
+console.log(myCountry.population);

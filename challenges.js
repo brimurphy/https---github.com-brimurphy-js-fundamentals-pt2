@@ -49,9 +49,9 @@ calcTip(125);
 calcTip(555);
 calcTip(44);
 
-console.log(tips);
-console.log(billTotals);
-
+// console.log(tips);
+// console.log(billTotals);
+/*
 //  Jonas's solution
 const calcTips = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -61,3 +61,4 @@ const tipsJonas = [calcTips(bills[0]), calcTips(bills[1]), calcTips(bills[2])];
 const totals = [bills[0] + tipsJonas[0], bills[1] + tipsJonas[1], bills[2] + tipsJonas[2]];
 
 console.log(bills, tipsJonas, totals);
+*/
