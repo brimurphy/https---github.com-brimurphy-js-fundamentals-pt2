@@ -191,7 +191,7 @@ if (friends.includes(`Stephen`)) {
     console.log(`You have a friend called Stephen`);
 }
 */
-
+/*
 // Introduction to Objects
 
 const brian = {
@@ -229,3 +229,52 @@ console.log(brian);
 
 // Challenge
 console.log(`${brian.firstName} has ${brian.friends.length} friends, and his best friend is ${brian.friends[0]}`);
+*/
+
+// Object Methods
+
+const brian = {
+    firstName: `Brian`,
+    lastName: `Murphy`,
+    birthYear: 1983,
+    job: `Technician`,
+    friends: [`Michael`, `Peter`, `Stephen`],
+    hasDriversLicence: true,
+    // Calling function in an object, the value is the function
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+    // calcAge: function () {
+    //     console.log(this);
+    //     return 2037 - this.birthYear;
+    // }
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        // if (this.hasDriversLicence) {
+        //     return `${this.firstName} is a ${this.age} ${this.job}, and he has a driver's licence 🚗`;
+        // } else {
+        //     return `${this.firstName} is a ${this.age} ${this.job}, and he does not have a driver's licence 🚶‍♂️`;
+        // }
+
+        // Jonas solution
+
+        return `${this.firstName} is a ${this.age} year old ${this.job}, and he has ${this.hasDriversLicence ? `a` : `no`} driver's licence.`;
+    }
+};
+
+console.log(brian.calcAge()); // call function once
+console.log(brian.age); // age is now saved as an object and can be called anytime
+console.log(brian.age);
+console.log(brian.age);
+
+// Bracket Notation
+// console.log(brian[`calcAge`]());
+
+// Challenge
+// `Brian is a 54 year old electrician, and he has a drivers licence`
+
+console.log(brian.getSummary())

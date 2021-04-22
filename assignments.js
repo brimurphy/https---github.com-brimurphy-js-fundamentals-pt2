@@ -90,19 +90,39 @@ neighbours[2] = `Grand Duchy of Luxembourg`;
 
 // 6: Introduction to Objects
 
+// const myCountry = {
+//     country: `Ireland`,
+//     capital: `Dublin`,
+//     language: `English`,
+//     population: 5,
+//     neighbours: [`Wales`, `Northern Ireland`, `England`, `Scotland`]
+// };
+
+// 7: Dot vs. Bracket Notation
+
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital city called ${myCountry.capital}`);
+
+// myCountry.population = 7;
+// console.log(myCountry.population);
+// myCountry[`population`] = 5;
+// console.log(myCountry.population);
+
+// 8: Object Methods
+
 const myCountry = {
     country: `Ireland`,
     capital: `Dublin`,
     language: `English`,
     population: 5,
-    neighbours: [`Wales`, `Northern Ireland`, `England`, `Scotland`]
+    neighbours: [`Wales`, `Northern Ireland`, `England`, `Scotland`],
+    describe: function () {
+        return `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbours.length} neighbouring countries and a capital city called ${this.capital}!`;
+    },
+    checkIsland: function () {
+        this.isIsland = `${this.neighbours.length === 0 ? true : false}`;
+        return this.isIsland;
+    }
 };
 
-// 7: Dot vs. Bracket Notation
-
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital city called ${myCountry.capital}`);
-
-myCountry.population = 7;
-console.log(myCountry.population);
-myCountry[`population`] = 5;
-console.log(myCountry.population);
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
