@@ -124,5 +124,5 @@ const myCountry = {
     }
 };
 
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland());
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());

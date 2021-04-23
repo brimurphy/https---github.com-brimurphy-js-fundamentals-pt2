@@ -230,7 +230,7 @@ console.log(brian);
 // Challenge
 console.log(`${brian.firstName} has ${brian.friends.length} friends, and his best friend is ${brian.friends[0]}`);
 */
-
+/*
 // Object Methods
 
 const brian = {
@@ -278,3 +278,4 @@ console.log(brian.age);
 // `Brian is a 54 year old electrician, and he has a drivers licence`
 
 console.log(brian.getSummary())
+*/

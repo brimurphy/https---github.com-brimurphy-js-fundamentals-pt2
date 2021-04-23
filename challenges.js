@@ -62,3 +62,38 @@ const totals = [bills[0] + tipsJonas[0], bills[1] + tipsJonas[1], bills[2] + tip
 
 console.log(bills, tipsJonas, totals);
 */
+
+// Challenge 3:
+
+const mark = {
+    fullName: `Mark Miller`,
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
+    }
+}
+
+const john = {
+    fullName: `John Smith`,
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
+    }
+}
+console.log(mark.BMI); // returns undefined because method not called yet
+console.log(mark[`calcBMI`]()); // method is called
+console.log(john[`calcBMI`]());
+console.log(mark.BMI); // returns value
+
+if (mark.BMI > john.BMI) {
+    console.log(`${mark.fullName}'s BMI of (${mark.BMI}) is higher than ${john.fullName}'s BMI of (${john.BMI})`)
+} else if (mark.BMI < john.BMI) {
+    console.log(`${john.fullName}'s BMI of (${john.BMI}) is higher than ${mark.fullName}'s BMI of (${mark.BMI})`);
+} else {
+    console.log(`${mark.fullName}'s BMI of ${mark.BMI} and ${john.fullName}'s BMI of ${john.BMI} are the same.`);
+}
+
