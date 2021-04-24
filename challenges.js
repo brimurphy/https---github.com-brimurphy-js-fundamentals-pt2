@@ -84,6 +84,7 @@ const john = {
         return this.BMI;
     }
 }
+/*
 console.log(mark.BMI); // returns undefined because method not called yet
 console.log(mark[`calcBMI`]()); // method is called
 console.log(john[`calcBMI`]());
@@ -96,4 +97,4 @@ if (mark.BMI > john.BMI) {
 } else {
     console.log(`${mark.fullName}'s BMI of ${mark.BMI} and ${john.fullName}'s BMI of ${john.BMI} are the same.`);
 }
-
+*/

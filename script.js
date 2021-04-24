@@ -279,3 +279,22 @@ console.log(brian.age);
 
 console.log(brian.getSummary())
 */
+
+// Iteration: The For Loop
+
+// Instead of this
+// console.log(`Lifting weights rep 1 🏋️‍♂️`);
+// console.log(`Lifting weights rep 2 🏋️‍♂️`);
+// console.log(`Lifting weights rep 3 🏋️‍♂️`);
+// console.log(`Lifting weights rep 4 🏋️‍♂️`);
+// console.log(`Lifting weights rep 5 🏋️‍♂️`);
+// console.log(`Lifting weights rep 6 🏋️‍♂️`);
+// console.log(`Lifting weights rep 7 🏋️‍♂️`);
+// console.log(`Lifting weights rep 8 🏋️‍♂️`);
+// console.log(`Lifting weights rep 9 🏋️‍♂️`);
+// console.log(`Lifting weights rep 10 🏋️‍♂️`);
+// We can create a for loop
+// for loop keeps running while condition is true
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights rep ${rep} 🏋️‍♂️`);
+}
