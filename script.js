@@ -279,7 +279,7 @@ console.log(brian.age);
 
 console.log(brian.getSummary())
 */
-
+/*
 // Iteration: The For Loop
 
 // Instead of this
@@ -297,4 +297,57 @@ console.log(brian.getSummary())
 // for loop keeps running while condition is true
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights rep ${rep} 🏋️‍♂️`);
+}
+*/
+
+// Looping Arrays, Breaking and Continuing
+
+const brian = [
+    `Brian`,
+    `Murphy`,
+    2037 - 1983,
+    "technician",
+    [`Michael`, `Peter`, `Stephen`],
+    true
+];
+const types = [];
+
+// console.log(brian[0]);
+// console.log(brian[1]);
+// ...
+// console.log(brian[4]);
+// brian[5] does not exist
+
+for (let i = 0; i < brian.length; i++) {
+    // Reading from an Array
+    console.log(brian[i], typeof brian[i]);
+
+    // Filling an Array methods
+    // types[i] = typeof brian[i];
+    types.push(typeof brian[i]);
+}
+
+console.log(types);
+
+const years = [1983, 2007, 2019, 1962];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log(`-- Only Strings --`);
+for (let i = 0; i < brian.length; i++) {
+    if (typeof brian[i] !== `string`) continue;
+
+    console.log(brian[i], typeof brian[i]);
+}
+
+console.log(`-- Break With Number --`);
+for (let i = 0; i < brian.length; i++) {
+    if (typeof brian[i] === `number`) break;
+
+    console.log(brian[i], typeof brian[i]);
 }
