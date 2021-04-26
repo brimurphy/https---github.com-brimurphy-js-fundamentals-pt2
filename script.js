@@ -299,7 +299,7 @@ for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights rep ${rep} 🏋️‍♂️`);
 }
 */
-
+/*
 // Looping Arrays, Breaking and Continuing
 
 const brian = [
@@ -350,4 +350,28 @@ for (let i = 0; i < brian.length; i++) {
     if (typeof brian[i] === `number`) break;
 
     console.log(brian[i], typeof brian[i]);
+}
+*/
+
+// Looping Backwards and Loops in Loops
+
+const brian = [
+    `Brian`,
+    `Murphy`,
+    2037 - 1983,
+    "technician",
+    [`Michael`, `Peter`, `Stephen`],
+    true,
+];
+
+for (let i = brian.length - 1; i >= 0; i--) {
+    console.log(i, brian[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`----Starting Exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+    }
 }
