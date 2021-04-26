@@ -151,8 +151,21 @@ const listOfNeighbours = [
 
 
 for (let neighbours = 0; neighbours < listOfNeighbours.length; neighbours++) {
-    console.log(`${listOfNeighbours[neighbours]}`);
+    // console.log(`${listOfNeighbours[neighbours]}`);
     for (let country = 0; country < listOfNeighbours[neighbours].length; country++) {
-        console.log(`Neighbour: ${listOfNeighbours[neighbours][country]}`);
+        // console.log(`Neighbour: ${listOfNeighbours[neighbours][country]}`);
     }
 }
+
+// 12: The While Loop
+
+const percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentages3.push(perc);
+    i++;
+}
+console.log(percentages3);
+
+
