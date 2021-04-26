@@ -376,7 +376,7 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     }
 }
 */
-
+/*
 // The While Loop
 
 // Gym example from above for loop
@@ -395,3 +395,4 @@ while (dice !== 6) {
         console.log(`You rolled a ${dice}, game over.`);
     }
 }
+*/

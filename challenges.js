@@ -27,27 +27,27 @@ averageKoalas = calcAverage(23, 34, 27);
 
 // Coding Challenge 2:
 
-const bills = [125, 555, 44];
-const tips = [];
-const billTotals = [];
+// const bills = [125, 555, 44];
+// const tips = [];
+// const billTotals = [];
 
-function calcTip(bill) {
-    if (bill >= 50 && bill <= 300) {
-        const tip = bill * 0.15;
-        tips.push(tip);
-        const billTotal = bill + tip;
-        billTotals.push(billTotal);
-    } else {
-        const tip = bill * 0.2;
-        tips.push(tip);
-        const billTotal = bill + tip;
-        billTotals.push(billTotal);
-    }
-}
+// function calcTip(bill) {
+//     if (bill >= 50 && bill <= 300) {
+//         const tip = bill * 0.15;
+//         tips.push(tip);
+//         const billTotal = bill + tip;
+//         billTotals.push(billTotal);
+//     } else {
+//         const tip = bill * 0.2;
+//         tips.push(tip);
+//         const billTotal = bill + tip;
+//         billTotals.push(billTotal);
+//     }
+// }
 
-calcTip(125);
-calcTip(555);
-calcTip(44);
+// calcTip(125);
+// calcTip(555);
+// calcTip(44);
 
 // console.log(tips);
 // console.log(billTotals);
@@ -98,3 +98,38 @@ if (mark.BMI > john.BMI) {
     console.log(`${mark.fullName}'s BMI of ${mark.BMI} and ${john.fullName}'s BMI of ${john.BMI} are the same.`);
 }
 */
+
+// Challenge 4:
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        const tip = bill * 0.15;
+        tips.push(tip);
+        const billTotal = bill + tip;
+        billTotals.push(billTotal);
+    } else {
+        const tip = bill * 0.2;
+        tips.push(tip);
+        const billTotal = bill + tip;
+        billTotals.push(billTotal);
+    }
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const billTotals = [];
+const tips = [];
+
+for (let bill = 0; bill < bills.length; bill++) {
+    calcTip(bills[bill]);
+}
+console.log(tips, billTotals);
+
+function calcAverage2(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i];
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcAverage2(billTotals));

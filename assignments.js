@@ -166,6 +166,6 @@ while (i < populations.length) {
     percentages3.push(perc);
     i++;
 }
-console.log(percentages3);
+// console.log(percentages3);
 
 
